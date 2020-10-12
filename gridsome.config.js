@@ -7,5 +7,6 @@
 module.exports = {
   siteName: "Gridsome",
   pathPrefix: "devb",
+  outputDir: "public",
   plugins: [],
 };
