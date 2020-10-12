@@ -4,9 +4,18 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const tailwindcss = require("tailwindcss");
+
 module.exports = {
   siteName: "Gridsome",
   pathPrefix: "devb",
   outputDir: "public",
   plugins: [],
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [tailwindcss],
+      },
+    },
+  },
 };
