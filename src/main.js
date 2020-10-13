@@ -3,6 +3,8 @@
 
 import DefaultLayout from "~/layouts/Default.vue";
 import "./assets/css/global.css";
+// import "prismjs/themes/prism.css";
+import "./assets/css/prism.css";
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component

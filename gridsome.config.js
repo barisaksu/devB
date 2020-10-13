@@ -10,7 +10,24 @@ module.exports = {
   siteName: "Gridsome",
   pathPrefix: "devb",
   outputDir: "public",
-  plugins: [],
+  plugins: [
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "src/posts/**/*.md",
+        typeName: "Post",
+        route: "/:slug",
+      },
+    },
+  ],
+  templates: {
+    Post: "/:slug",
+  },
+  transformers: {
+    remark: {
+      plugins: ["@gridsome/remark-prismjs"],
+    },
+  },
   css: {
     loaderOptions: {
       postcss: {
