@@ -60,6 +60,12 @@ export default {};
 
 .markdown a {
   @apply text-blue-600 font-semibold;
+  box-shadow: 0 1px 0 0 #3182ce;
+
+  &:hover {
+    box-shadow: none;
+    color: blue;
+  }
 }
 
 .markdown strong a {
