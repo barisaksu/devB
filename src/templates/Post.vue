@@ -19,6 +19,7 @@
 query Post ($path: String!) {
     post: post (path: $path) {
         title
+        description
         content
         date(format: "D MMMM  YYYY")
         timeToRead
@@ -28,7 +29,27 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
-export default {};
+export default {
+  metaInfo() {
+    return {
+      title: this.$page.post.title,
+      meta: [
+        {
+          name: "description",
+          content: this.$page.post.description,
+        },
+        {
+          property: "og:title",
+          content: this.$page.post.title,
+        },
+        {
+          property: "og:description",
+          content: this.$page.post.description,
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss">
