@@ -6,9 +6,7 @@
       :key="index"
     >
       <h2 class="antialiased">
-        <g-link class="title" :to="post.node.path">{{
-          post.node.title
-        }}</g-link>
+        <g-link :to="post.node.path">{{ post.node.title }}</g-link>
       </h2>
       <small class="text-gray-700" :title="post.node.date"
         >{{ post.node.date }} · {{ post.node.timeToRead }} min read</small
