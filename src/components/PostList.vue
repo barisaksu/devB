@@ -1,7 +1,7 @@
 <template>
   <div>
     <article
-      class="rounded my-4 p-2"
+      class="rounded my-4 py-2"
       v-for="(post, index) in posts"
       :key="index"
     >
