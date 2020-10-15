@@ -11,4 +11,9 @@ export default function(Vue, { router, head, isClient }) {
   Vue.component("Layout", DefaultLayout);
 
   head.bodyAttrs = { class: "overflow-y-scroll" };
+
+  head.link.push({
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Raleway&display=swap",
+  });
 }
