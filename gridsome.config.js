@@ -17,6 +17,13 @@ module.exports = {
         path: "src/posts/**/*.md",
         typeName: "Post",
         route: "/:slug",
+        refs: {
+          tags: {
+            typeName: "Tag",
+            route: "/tag/:slug",
+            create: true,
+          },
+        },
       },
     },
   ],

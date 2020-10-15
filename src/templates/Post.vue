@@ -11,7 +11,15 @@
         >
       </div>
     </div>
-    <p class="markdown" v-html="$page.post.content"></p>
+    <p class="markdown my-8" v-html="$page.post.content"></p>
+    <div id="tags">
+      <span
+        class="bg-gray-200 text-gray-800 p-2 rounded mr-2"
+        v-for="tag in $page.post.tags"
+        :key="tag.id"
+        ><g-link :to="tag.path">#{{ tag.id }}</g-link></span
+      >
+    </div>
   </Layout>
 </template>
 
@@ -23,6 +31,10 @@ query Post ($path: String!) {
         content
         date(format: "D MMMM  YYYY")
         timeToRead
+        tags {
+          id
+          path
+        }
 
     }
 }
