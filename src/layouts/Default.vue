@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto mt-4 px-4 max-w-4xl">
+  <div class="container mx-auto mt-4 px-2 max-w-4xl">
     <div class="flex flex-col justify-center items-center">
       <header class="w-full md:flex left-0 mt-10">
         <div class="flex flex-col absolute lg:-ml-32">
@@ -16,7 +16,7 @@
         </div>
         <slot name="about"></slot>
       </header>
-      <div class="w-full my-5 self-end">
+      <div class="w-full my-5">
         <slot />
       </div>
       <footer
@@ -58,6 +58,22 @@ export default {
 </script>
 
 <style lang="scss">
+body::-webkit-scrollbar {
+  width: 4px;
+  cursor: pointer;
+  /*background-color: rgba(229, 231, 235, var(--bg-opacity));*/
+}
+body::-webkit-scrollbar-track {
+  background-color: rgba(229, 231, 235, var(--bg-opacity));
+  cursor: pointer;
+  /*background: red;*/
+}
+body::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: #000;
+  /*outline: 1px solid slategrey;*/
+}
+
 footer,
 nav {
   a {
