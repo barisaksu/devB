@@ -1,15 +1,15 @@
 <template>
-  <div class="container mx-auto mt-4 px-2 max-w-4xl">
+  <div class="container mx-auto mt-4 px-4 lg:pl-12 max-w-4xl">
     <div class="flex flex-col justify-center items-center">
-      <header class="w-full md:flex left-0 mt-10">
-        <div class="flex flex-col absolute lg:-ml-32">
+      <header class="text-center md:text-left w-full md:flex left-0 mt-10">
+        <div class="flex md:flex-col justify-center lg:absolute lg:-ml-32">
           <g-image
-            class="rounded-full pr-8"
+            class="rounded-full md:pr-8"
             alt="Example image"
             src="~/assets/images/avatar.png"
             width="135"
           />
-          <div class="flex justify-center -ml-10 mt-2">
+          <div class="hidden lg:flex justify-center -ml-10 mt-2">
             <Github username="barisaksu" />
             <Gitlab username="baris" />
           </div>

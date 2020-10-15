@@ -1,12 +1,17 @@
 <template>
   <Layout>
-    <div slot="about" class="flex">
-      <g-link class="title text-blue-700 text-4xl" to="/">⇠ </g-link>
-      <div class="flex flex-col ml-2">
-        <h1 class="text-4xl">
+    <div slot="about" class="flex justify-center">
+      <g-link class="hidden md:block title text-blue-700 text-4xl" to="/"
+        >⇠
+      </g-link>
+      <div class="flex flex-col md:ml-2">
+        <g-link class="md:hidden text-blue-700 text-xl" to="/"
+          >⇠ turn back
+        </g-link>
+        <h1 class="text-3xl md:text-4xl">
           {{ $page.post.title }}
         </h1>
-        <small class="text-xl text-gray-700" :title="$page.post.date"
+        <small class="text-md md:text-xl text-gray-700" :title="$page.post.date"
           >{{ $page.post.date }} · {{ $page.post.timeToRead }} min read</small
         >
       </div>
