@@ -66,6 +66,23 @@ export default {
       ],
     };
   },
+  mounted() {
+    let twitterScript = document.createElement("script");
+    twitterScript.async = true;
+    twitterScript.setAttribute(
+      "src",
+      "https://platform.twitter.com/widgets.js"
+    );
+    document.head.appendChild(twitterScript);
+
+    let codepenScript = document.createElement("script");
+    codepenScript.async = true;
+    codepenScript.setAttribute(
+      "src",
+      "https://static.codepen.io/assets/embed/ei.js"
+    );
+    document.head.appendChild(codepenScript);
+  },
 };
 </script>
 

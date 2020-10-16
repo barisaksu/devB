@@ -3,8 +3,8 @@ title: Syntax Highlighting with Prism
 description: lorem ipsum dolor sit amet ...
 slug: first-blog
 author: Barış
-tags: ["gridsome", "markdown", "baris"]
-date: 2020-10-13
+tags: ["gridsome", "prism"]
+date: 2020-10-15
 ---
 
 ## HTML
