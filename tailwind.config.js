@@ -7,8 +7,28 @@ module.exports = {
   },
   purge: ["./src/**/*.vue"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        light: { raw: "(prefers-color-scheme: light)" },
+        dark: { raw: "(prefers-color-scheme: dark)" },
+      },
+    },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    function({ addBase, config }) {
+      addBase({
+        body: {
+          color: config("theme.colors.black"),
+          backgroundColor: config("theme.colors.white"),
+        },
+        "@screen dark": {
+          body: {
+            color: config("theme.colors.white"),
+            backgroundColor: config("theme.colors.black"),
+          },
+        },
+      });
+    },
+  ],
 };
