@@ -2,14 +2,22 @@
   <div class="container mx-auto mt-4 px-4 lg:pl-12 max-w-4xl">
     <div class="flex flex-col justify-center items-center">
       <header class="text-center md:text-left w-full md:flex left-0 mt-10">
+        <ThemeSwitcher
+          class="hidden lg:flex lg:fixed right-0 top-0 m-20 rounded-full"
+        />
         <div class="flex md:flex-col justify-center lg:absolute lg:-ml-32">
-          <g-image
-            class="rounded-full md:pr-8"
-            alt="Example image"
-            src="~/assets/images/avatar.png"
-            width="135"
-          />
-          <div class="hidden lg:flex justify-center -ml-10 mt-2">
+          <div class="flex">
+            <ThemeSwitcher
+              class="inline-flex absolute self-end lg:hidden bg-gray-900 dark:bg-yellow-500 text-white rounded-full"
+            />
+            <g-image
+              class="rounded-full w-24 h-24"
+              alt="Example image"
+              src="~/assets/images/avatar.png"
+              width="135"
+            />
+          </div>
+          <div class="hidden lg:flex justify-center mt-2">
             <Github username="barisaksu" />
             <Gitlab username="baris" />
           </div>
@@ -47,12 +55,14 @@ query {
 </static-query>
 
 <script>
+import ThemeSwitcher from "~/components/ThemeSwitcher.vue";
 import Github from "~/components/brands/Github.vue";
 import Gitlab from "~/components/brands/Gitlab.vue";
 export default {
   components: {
     Github,
     Gitlab,
+    ThemeSwitcher,
   },
 };
 </script>
@@ -60,6 +70,8 @@ export default {
 <style lang="scss">
 body {
   font-family: "Raleway", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 
   &::-webkit-scrollbar {
     width: 4px;
@@ -82,11 +94,11 @@ body {
   footer,
   nav {
     a {
-      box-shadow: 0 1px 0 0 #000;
+      box-shadow: 0 1px 0 0 var(--underline-color);
 
       &:hover {
         box-shadow: none;
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none'  stroke='blue' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
         background-position: 0 17px;
         background-size: auto 3px;
         background-repeat: repeat-x;
@@ -104,7 +116,7 @@ body {
     padding-bottom: 0.15em;
 
     &:hover {
-      color: blue;
+      color: var(--link-hover);
     }
   }
 }

@@ -94,7 +94,7 @@ export default {
 }
 
 .markdown {
-  @apply text-gray-900 leading-normal break-words;
+  @apply leading-normal break-words;
 }
 
 .markdown > * + * {

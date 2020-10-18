@@ -10,7 +10,7 @@
       viewBox="0 0 24 24"
       role="img"
       aria-labelledby="ap8tchfem8uive2p7fvvli5b6br2c0td"
-      class="crayons-icon hover:text-red-500"
+      class="fill-current"
     >
       <title id="ap8tchfem8uive2p7fvvli5b6br2c0td">GitHub</title>
       <path

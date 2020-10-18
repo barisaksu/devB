@@ -1,6 +1,6 @@
 <template>
-  <div class="divide-y divide-gray-400">
-    <article class="rounded py-2" v-for="(post, index) in posts" :key="index">
+  <div class="divide-y divide-gray-400 dark:divide-gray-800">
+    <article class="py-2" v-for="(post, index) in posts" :key="index">
       <h2 class="antialiased">
         <g-link :to="post.node.path">{{ post.node.title }}</g-link>
       </h2>

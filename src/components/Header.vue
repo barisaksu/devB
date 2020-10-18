@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-2">
-    <h1 class="text-2xl">Hello! I'm Barış.</h1>
+    <h1 class="text-2xl dark:text-red-500">Hello! I'm Barış.</h1>
     <p>🚀 A passionate Full-Stack web developer and musician from Turkey</p>
     <nav class="flex flex-col-reverse md:flex-row w-full justify-between my-4">
       <div>
@@ -13,7 +13,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  components: {},
+};
 </script>
 
 <style lang="scss" scoped>

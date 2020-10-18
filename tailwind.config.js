@@ -1,3 +1,6 @@
+const plugin = require("tailwindcss/plugin");
+const selectorParser = require("postcss-selector-parser");
+
 module.exports = {
   future: {
     // removeDeprecatedGapUtilities: true,
@@ -9,26 +12,31 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        light: { raw: "(prefers-color-scheme: light)" },
         dark: { raw: "(prefers-color-scheme: dark)" },
+        // => @media (prefers-color-scheme: dark) { ... }
       },
     },
   },
-  variants: {},
+  variants: {
+    textColor: ["dark", "responsive", "hover", "focus"],
+    backgroundColor: ["dark", "responsive", "hover", "focus"],
+    divideColor: ["dark", "responsive", "hover", "focus"],
+  },
   plugins: [
-    function({ addBase, config }) {
-      addBase({
-        body: {
-          color: config("theme.colors.black"),
-          backgroundColor: config("theme.colors.white"),
-        },
-        "@screen dark": {
-          body: {
-            color: config("theme.colors.white"),
-            backgroundColor: config("theme.colors.black"),
-          },
-        },
+    plugin(function({ addVariant, prefix }) {
+      addVariant("dark", ({ modifySelectors, separator }) => {
+        modifySelectors(({ selector }) => {
+          return selectorParser((selectors) => {
+            selectors.walkClasses((sel) => {
+              sel.value = `dark${separator}${sel.value}`;
+              sel.parent.insertBefore(
+                sel,
+                selectorParser().astSync(".scheme-dark ")
+              );
+            });
+          }).processSync(selector);
+        });
       });
-    },
+    }),
   ],
 };

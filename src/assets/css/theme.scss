@@ -1,0 +1,49 @@
+$bg-dark: #222831;
+$bg-light: white;
+
+$text-color: #000;
+$text-color-dark: #ececec;
+
+$link-hover: blue;
+$link-hover-dark: #f2a365;
+
+$underline-dark: #30475e;
+$underline-light: #000;
+
+$divide-color: #e2e8f0;
+$divide-color-dark: #30475e;
+
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--divide-color) !important;
+}
+
+
+/*
+    Light Theme
+*/
+:root {
+    --bg-color: #{$bg-light};
+    --text-color: #{$text-color};
+    --link-hover: #{$link-hover};
+    --underline-color: #{$underline-light};
+    --divide-color: #{$divide-color};
+}
+
+/*
+    Dark Theme
+*/
+html[class="scheme-dark"] {
+    --bg-color: #{$bg-dark};
+    --text-color: #{$text-color-dark};
+    --link-hover: #{$link-hover-dark};
+    --underline-color: #{$underline-dark};
+    --divide-color: #{$divide-color-dark};
+}
+
+// Maybe the sephia theme can be added after the first release, but not now :smile:

@@ -11,7 +11,7 @@
       viewBox="0 0 24 24"
       role="img"
       aria-labelledby="a2wqrk3b3tfru5u48sqwjiftu9w33xxr"
-      class="crayons-icon"
+      class="fill-current"
     >
       <title id="a2wqrk3b3tfru5u48sqwjiftu9w33xxr">GitLab</title>
       <path
@@ -23,7 +23,6 @@
 
 <script>
 export default {
-    props: ["username"],
-
+  props: ["username"],
 };
 </script>
