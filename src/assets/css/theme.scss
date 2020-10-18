@@ -14,15 +14,6 @@ $divide-color: #e2e8f0;
 $divide-color-dark: #30475e;
 
 
-*,
-::before,
-::after {
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
-    border-color: var(--divide-color) !important;
-}
-
 
 /*
     Light Theme
