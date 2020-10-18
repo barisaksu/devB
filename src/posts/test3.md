@@ -7,170 +7,53 @@ tags: ["gridsome", "remark", "markdown"]
 date: 2020-10-14
 ---
 
-This a test of all markdown possibilities:
-
----
-
-## Headings
-
-# h1 Heading 1
-
-## h2 Heading 2
-
-### h3 Heading 3
-
-#### h4 Heading 4
-
-##### h5 Heading 5
-
-###### h6 Heading 6
-
----
-
-## Horizontal Rules
-
----
-
----
-
----
-
----
-
-## Emphasis
-
-**This is bold text**
-
-**This is bold text**
-
-_This is italic text_
-
-_This is italic text_
-
-~~Strikethrough~~
-
----
-
-## Links
-
-[link text][1]
-
-[link with title][2]
-
-This is [an example](http://example.com/ "Title") inline link.
-
-[This link](http://example.net/) has no title attribute.
-
----
-
-## Blockquotes
-
-> Blockquotes can also be nested...
->
-> > ...by using additional greater-than signs right next to each other...
-> >
-> > > ...or with spaces between arrows.
-
----
-
-## Indentation
-
-indentation 1-1
-
-indentation 1-2
-indentation 2-1
-
----
-
-## Lists
-
-### Unordered
-
-- Create a list by starting a line with `+`, `-`, or `*`
-- Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    - Ac tristique libero volutpat at
-    * Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-- Very easy!
-
-### Ordered
-
-#### Numers in sequence
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-#### Numers not in sequence
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
----
-
-## Images
-
-![Minion][3]
-![Stormtroopocat][4]
-
-Like links, Images also have a footnote style syntax
-
-![Alt text][5]
-
-With a reference later in the document defining the URL location:
-
----
-
-## Tables
-
-| Option | Description                                                               |
-| ------ | ------------------------------------------------------------------------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default.    |
-| ext    | extension to be used for dest files.                                      |
-
-Right aligned columns
-
-| Option |                                                               Description |
-| -----: | ------------------------------------------------------------------------: |
-|   data | path to data files to supply the data that will be passed into templates. |
-| engine |    engine to be used for processing templates. Handlebars is the default. |
-|    ext |                                      extension to be used for dest files. |
-
----
-
-## Code
-
-Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-Block code "fences"
-
-```
-Sample text here...
-```
-
-Syntax highlighting
-
-```js
-var foo = function(bar) {
-  return bar++;
-};
-
-console.log(foo(5));
-```
-
----
-
-[1]: http://dev.nodeca.com
-[2]: http://nodeca.github.io/pica/demo/ "title text!"
-[3]: https://octodex.github.com/images/dinotocat.png
-[4]: https://octodex.github.com/images/saritocat.png "The Stormtroopocat"
-[5]: https://octodex.github.com/images/daftpunktocat-thomas.gif "The Dojocat"
+## Ossa narrat sortita fecerat sit conataque
+
+Lorem markdownum aptos pes, Inachidos caput corrumpere! Hanc haud quam [est
+candore](http://quisquis-in.io/ramossuperum) conpulit meriti. Vincere ferocia
+arva.
+
+## Eleis celeberrimus loci ait falsa infelix tuoque
+
+Mox haberet ambae torique dedisses quibus que membraque nervo remanet, digiti
+iam neve clamorque fallaces. Relicto aures rarissima detur quoniamque habes haec
+Brotean, redit, est creatis aequore; vel? Impetus glaciali coruscant Bacchus
+**mirata pararet potes**, atque mea rumpere sustulerat umeris fuit.
+
+## Facundis quid
+
+Venerit conveniunt per memori sed laniarat Dromas, solum tum. Undis lacteus
+infitiatur adest [acies certius](https://barisaksu.com) inscius, cum ad
+emittunt dextra.
+
+Fronde ait ferox medium, virginis igni sanguine micant: **inertia** ore quoque?
+Iaculi quicquid **virescere misit stirpe** Theseus Venerem! Falce taceo oves,
+idem fugit, non abiit palam quantum, fontes vinci et abiit. Deiectoque exstabant
+**Phrygiae** cepit munus tanto.
+
+## Et capienda Peneia
+
+_Haec moenia pater_ signataque urget, ait quies laqueo sumitque. Misit sit
+moribunda terrae sequar longis hoc, cingebant copia cultros! Alis templi taeda
+solet suum mihi penates quae. Cecidere _deo agger infantem_ indetonsusque ipsum;
+ova formasque cornu et pectora [voce oculos](https://netsper.co),
+prodis pariterque sacra finibus, Sabinae. Fugarant fuerat, famam ait toto imas
+sorte pectora, est et, procubuit sua Appenninigenae habes postquam.
+
+## Quoque aut gurgite aliquis igneus
+
+Spatiosa ferax iam sis ex quae peperit iacentes, grates rogat quae senserat nec
+nec verba harenas inplent. Per dum necis in in versus quin loquendi latens;
+inde. **Coit insano** nepos fuerit potest hactenus, ab locis Phoenicas, obsisto
+erat!
+
+> Nec uterum Aurorae petentes abstulit. Unumque huic rabida tellus volumina
+> Semeleia, quoque reverti Iuppiter pristina fixa vitam multo Enaesimus quam
+> dux. Sua **damus** decipere, ut **obortas** nomen sine vestrae vita.
+
+Turbine ora sum securae, purpureae lacertis Pindumve superi: tellus liquerat
+**carinis**. Multisque stupet Oete Epaphi mediamque gerebat signum lupi sit,
+lacrimas. Tumidi fassusque hosti, deus [vixque desint
+dedit](https://barisaksu.com) dum et, quo non, dea [suras
+tantum](https://netsper.co). Unus acta capulo. In Dryope sic
+vestigia est neu ignis in **illa mirantur agilis** densior.
