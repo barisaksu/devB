@@ -32,7 +32,7 @@
       >
         <span>© 2020 Barış Aksu</span>
         <div>
-          <a href="https://github.com/baris" target="_blank">Gitlab</a
+          <a href="https://gitlab.com/baris" target="_blank">Gitlab</a
           ><span> / </span
           ><a href="https://twitter.com/barisaksu" target="_blank">Twitter</a
           ><span> / </span
